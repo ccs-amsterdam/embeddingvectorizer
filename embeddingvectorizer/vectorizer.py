@@ -28,8 +28,8 @@ class BaseEmbeddingVectorizerMixin:
         x = super().fit_transform(X, y).tocsr()
         return np.array(list(self._transform(x)))
 
-    def transform(self, X: Iterable[str], y=None):
-        x = super().transform(X, y).tocsr()
+    def transform(self, X: Iterable[str]):
+        x = super().transform(X).tocsr()
         return np.array(list(self._transform(x)))
 
     def _transform(self, x):
