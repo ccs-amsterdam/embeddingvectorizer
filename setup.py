@@ -4,7 +4,7 @@ from distutils.core import setup
 
 setup(
     name="embeddingvectorizer",
-    version="0.03",
+    version="0.01",
     description="Sklearn vectorizers using word embedding model",
     author="Wouter van Atteveldt",
     author_email="wouter@vanatteveldt.com",
